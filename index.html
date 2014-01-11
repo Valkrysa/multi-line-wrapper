@@ -5,9 +5,34 @@
 	<title>Multi-Liner</title>
 	<script type="text/javascript" src="multi-liner.js"></script>
 	<script type="text/javascript">	
+		var theMultiLiner = null;
+		var theWrapperStart = null;
+		var theWrapperEnd = null;
+		var theWrapped = null;
+		
+		function initExample(){
+			theMultiLiner = new MultiLiner();
+			theWrapperStart = document.getElementById("string-wrapper-start");
+			theWrapperEnd = document.getElementById("string-wrapper-end");
+			theWrapped = document.getElementById("string-wrapper-body");
+		}
+		
+		function runExample(){
+			theMultiLiner.setStringToWrap(theWrapped.value);
+			theMultiLiner.setLineStart(theWrapperStart.value);
+			theMultiLiner.setLineEnd(theWrapperEnd.value);
+			theWrapped.value = theMultiLiner.wrapString();
+		}
+		
+		window.onload = initExample;
 	</script>
 </head>
 	<body>
-	test
+		<div>
+			<textarea id="string-wrapper-start" placeholder="Wrap the start of strings with."></textarea>
+			<textarea id="string-wrapper-end" placeholder="Wrap the end of strings with."></textarea>
+			<button onclick="runExample()">Wrap My String</button>
+		</div>
+		<textarea id="string-wrapper-body" placeholder="This is what will be wrapped." rows="50" cols="100"></textarea>
 	</body>
 </html>
