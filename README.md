@@ -5,7 +5,7 @@ I made this script because in my day job I find myself converting a lot of SQL q
 After wrapping enough queries in quotation marks it tends to get tiring and thus productivity helpers are born.
 
 You can try it for yourself at: http://www.melodioustech.com/multi-line-strings
-Read more about this and other projects and topics at: http://www.melodiousgames.com/javascript-multi-line-string
+Read more about this and other projects and topics at: http://blog.melodiousgames.com/javascript-multi-line-string
 
 ### Usage
 
