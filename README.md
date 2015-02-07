@@ -4,8 +4,10 @@ I made this script because in my day job I find myself converting a lot of SQL q
 
 After wrapping enough queries in quotation marks it tends to get tiring and thus productivity helpers are born.
 
-You can try it for yourself at: http://tech.valkrysa.com/multi-line-strings
-Read more about this and other projects and topics at: http://blog.valkrysa.com/javascript-multi-line-string
+You can try it for yourself at: 
+http://www.valkrysa.com/experiments/multi-line-string-generator/
+
+Read more about this and other projects and topics at: http://www.valkrysa.com/tech/2015/1/30/tools-javascript-multi-line-string-builder-and-other-things-too
 
 ### Usage
 
